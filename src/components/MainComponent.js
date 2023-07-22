@@ -1,4 +1,8 @@
 import React, { useState } from "react";
+import Home from "./Home";
+import Profile from "./Profile";
+import NewRecords from "./NewRecords";
+import Navbar from "./Navbar";
 
 function MainComponent() {
     const [currentPage, setCurrentPage] = useState('Home');

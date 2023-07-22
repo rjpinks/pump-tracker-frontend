@@ -1,6 +1,6 @@
 import React from "react";
 
-function Navbar({currentPage, handlePageChange }) {
+function Navbar({ currentPage, handlePageChange }) {
     return (
         <nav className="navbar navbar-expand-lg bg-body-tertiary">
             <div className="container-fluid">
@@ -14,20 +14,20 @@ function Navbar({currentPage, handlePageChange }) {
                             onClick={() => handlePageChange('Home')}
                             className={currentPage === 'Home' ? 'nav-link active' : 'nav-link'}
                             aria-current="page" 
-                            href="home"
+                            href="#"
                         >
                             Home
                         </a>
                         <a 
                             onClick={() => handlePageChange('Profile')}
                             className={currentPage === 'Profile' ? 'nav-link active' : 'nav-link'}
-                            href="profile">
+                            href="#">
                                 Profile
                         </a>
                         <a 
                             onClick={() => handlePageChange('New Records')}
                             className={currentPage === 'New Records' ? 'nav-link active' : 'nav-link'} 
-                            href="new-records"
+                            href="#"
                         >
                             New Records
                         </a>
