@@ -21,7 +21,8 @@ function Navbar({ currentPage, handlePageChange }) {
                         <a 
                             onClick={() => handlePageChange('Profile')}
                             className={currentPage === 'Profile' ? 'nav-link active' : 'nav-link'}
-                            href="#">
+                            href="#"
+                            >
                                 Profile
                         </a>
                         <a 
@@ -30,6 +31,13 @@ function Navbar({ currentPage, handlePageChange }) {
                             href="#"
                         >
                             New Records
+                        </a>
+                        <a 
+                            onClick={() => handlePageChange('Login')}
+                            className={currentPage === 'Login' ? 'nav-link active' : 'nav-link'} 
+                            href="#"
+                        >
+                            Login
                         </a>
                     </div>
                 </div>

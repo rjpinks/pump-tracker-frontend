@@ -3,6 +3,7 @@ import Home from "./Home";
 import Profile from "./Profile";
 import NewRecords from "./NewRecords";
 import Navbar from "./Navbar";
+import Login from "./Login";
 
 function MainComponent() {
     const [currentPage, setCurrentPage] = useState('Home');
@@ -16,6 +17,9 @@ function MainComponent() {
         }
         if (currentPage === 'New Records') {
             return <NewRecords />
+        }
+        if (currentPage === 'Login') {
+            return <Login />
         }
     }
 
